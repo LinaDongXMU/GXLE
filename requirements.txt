@@ -1,0 +1,18 @@
+The softwares you need：
+1 Install Amber18 from http://ambermd.org/
+
+2 Install X-Score from https://www.ics.uci.edu/~dock/manuals/xscore_1.2_manual/
+
+3 Install Anaconda from https://www.anaconda.com/
+The version we used is 3-2019.10.
+
+
+To configure the environment:
+
+conda create --name GXLE python=3.7
+conda activate GXLE
+conda install numpy==1.19.2
+conda install scipy==1.6.1
+conda install scikit-learn==0.24.1
+conda install pandas==1.2.3
+conda install joblib==1.0.1
