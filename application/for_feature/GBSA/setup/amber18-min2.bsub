@@ -1,0 +1,48 @@
+#!/bin/bash
+
+#BSUB -q gpu
+#BSUB -o AMBER.o-%J
+#BSUB -e AMBER.e-%J
+#BSUB -J amber-912
+#BSUB -n 4
+#BSUB -m "g002 g003 g006 g007"
+#BSUB -R "span[ptile=4]"
+
+# variables for sander. If you don't need it, just leave it blank.
+# The meanings of the variables can be found in the AMBER's manual.
+
+export CUDA_VISIBLE_DEVICES=3
+
+#--- LSF ---
+echo job runs at the following node:
+echo $LSB_HOSTS 
+NP=$(echo $LSB_HOSTS | awk '{print NF}')
+NNODE=$(echo $LSB_HOSTS | sed -e "s/ /\n/g" | uniq - | wc -l)
+echo ""
+echo Number of processor: $NP
+echo ""
+NGPU=$(expr $NP \/ 4)
+
+module add intel/15.0.6
+module add mpi/intel/5.0.3.049
+module add cuda/9.2
+module add miniconda/2.7
+
+#Environment for AMBER
+#------ AMBER v18 ------
+export AMBERVER=18
+export AMBERHOME=/data/home/bjwang/software/amber18
+export BINDIR=$AMBERHOME/bin
+export LIBDIR=$AMBERHOME/lib
+export INCDIR=$AMBERHOME/include
+export DATDIR=$AMBERHOME/dat
+#export PREC_MODEL=DPDP
+#export GPU_ID=-1
+
+ulimit -s unlimited
+
+#if [ $NGPU -eq 1 ]; then
+$AMBERHOME/bin/pmemd.cuda -O -i wat_min2.in -o 4wa9_wat_min2_912.log -c 4wa9_wat_min1_912.rst -p 4wa9_solv_912.prmtop -r 4wa9_wat_min2_912.rst -ref 4wa9_wat_min1_912.rst
+
+echo $(date)
+
