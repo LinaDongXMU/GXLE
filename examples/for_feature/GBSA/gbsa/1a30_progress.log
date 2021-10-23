@@ -1,0 +1,27 @@
+Loading and checking parameter files for compatibility...
+mmpbsa_py_energy found! Using /data/home/bjwang/software/amber18/bin/mmpbsa_py_energy
+cpptraj found! Using /data/home/bjwang/software/amber18/bin/cpptraj
+Preparing trajectories for simulation...
+1 frames were processed by cpptraj for use in calculation.
+
+Running calculations on normal system...
+
+Beginning GB calculations with /data/home/bjwang/software/amber18/bin/mmpbsa_py_energy
+  calculating complex contribution...
+  calculating receptor contribution...
+  calculating ligand contribution...
+
+Timing:
+Total setup time:                           0.745 sec.
+Creating trajectories with cpptraj:         2.660 sec.
+Total calculation time:                     2.361 sec.
+
+Total GB calculation time:                  2.360 sec.
+
+Statistics calculation & output writing:    0.007 sec.
+Total time taken:                           5.784 sec.
+
+
+MMPBSA.py Finished! Thank you for using. Please cite us if you publish this work with this paper:
+   Miller III, B. R., McGee Jr., T. D., Swails, J. M. Homeyer, N. Gohlke, H. and Roitberg, A. E.
+   J. Chem. Theory Comput., 2012, 8 (9) pp 3314--3321

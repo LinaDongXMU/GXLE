@@ -1,0 +1,18 @@
+Input file for running PB and GB
+&general
+  startframe=1, endframe=1, interval=1, verbose=1,
+  debug_printlevel=1
+  receptor_mask=':2-276', ligand_mask=':PRL'
+##
+  strip_mask=":Na+:Cl-:WAT"
+#strip_mask=":Na+:Cl-:TIP:TIP3:WAT:CL:CIO:CS:IB:K:LI:MG:NA:RB"
+##
+#  entropy=1,
+/
+&gb
+  igb=2, saltcon=0.00
+/
+#&pb
+#  istrng=0.
+#  radiopt=0,inp=1
+#/

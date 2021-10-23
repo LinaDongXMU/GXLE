@@ -1,0 +1,9 @@
+Stripping :WAT,Cl-,Na+ (solvent) from original topology, output is 1bcu_dry.prmtop
+Done stripping solvent!
+
+Creating receptor topology file by stripping :PRL from 1bcu_dry.prmtop
+Done creating receptor topology file!
+
+Creating ligand topology file by stripping !(:PRL) from 1bcu_dry.prmtop
+Done creating ligand topology file!
+

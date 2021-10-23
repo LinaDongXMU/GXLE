@@ -1,0 +1,31 @@
+Reading parm file (1bcu_dry.prmtop)
+title:
+default_name
+     Parameter topology includes 10-12 terms:
+     These are assumed to be zero here (e.g. from TIP3P water)
+	mm_options:  e_debug=2
+	mm_options:  gb=2
+	mm_options:  rgbmax=25.000000
+	mm_options:  gbsa=0
+	mm_options:  surften=0.007200
+	mm_options:  cut=999.000000
+	mm_options:  epsext=78.300000
+	mm_options:  kappa=0.000000
+Processing ASCII trajectory (_MMPBSA_complex.mdcrd.0)
+
+Processing frame 1
+      iter    Total       bad      vdW     elect   nonpolar   genBorn      frms
+               eff.c(2717) enb14 -->   903.859
+               eff.c(2718) eel14 --> 10252.863
+               eff.c(2776) enb --> -2430.002
+               eff.c(2777) eel --> -19633.133
+               eff.c(2778) e_gb --> -3569.174
+               eff.c(2779) esurf -->     0.000
+               eff.c(2780) evdwnp -->     0.000
+ff:     0 -10627.23   3848.35  -1526.14  -9380.27      0.00  -3569.17  1.60e+00
+ BOND    =      168.1142  ANGLE   =      591.9899  DIHED      =     3088.2485
+ VDWAALS =    -2430.0016  EEL     =   -19633.1329  EGB        =    -3569.1743
+ 1-4 VDW =      903.8591  1-4 EEL =    10252.8633  RESTRAINT  =        0.0000
+ ESURF   =        0.0000
+
+MM/GBSA processing done!
