@@ -6,7 +6,7 @@ More information are publish in the paper.(https://pubs.acs.org/doi/10.1021/acso
 
 Dong, L.; Qu, X.; Zhao, Y.; Wang, B., Prediction of Binding Free Energy of Protein–Ligand Complexes with a Hybrid Molecular Mechanics/Generalized Born Surface Area and Machine Learning Method. ACS Omega. 2021, 6, 32938–47.
 
-
+![image](https://github.com/LinaDongXMU/GXLE/blob/main/TOC.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 This is an instruction for users.
