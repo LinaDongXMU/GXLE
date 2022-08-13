@@ -2,7 +2,7 @@
 GXLE is a a hybrid molecular mechanics/generalized born surface area (MM/GBSA) and machine learning methond to predict the binding free energy of protein−ligand complexes。
 
 
-More information are publish in the paper.
+More information are publish in the paper.(https://pubs.acs.org/doi/10.1021/acsomega.1c04996)
 
 Dong, L.; Qu, X.; Zhao, Y.; Wang, B., Prediction of Binding Free Energy of Protein–Ligand Complexes with a Hybrid Molecular Mechanics/Generalized Born Surface Area and Machine Learning Method. ACS Omega. 2021, 6, 32938–47.
 
