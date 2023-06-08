@@ -2,6 +2,7 @@ The softwares you need：
 1 Install Amber18 from http://ambermd.org/
 
 2 Install X-Score from https://www.ics.uci.edu/~dock/manuals/xscore_1.2_manual/
+or http://www.sioc-ccbg.ac.cn/?p=42
 
 3 Install Anaconda from https://www.anaconda.com/
 The version we used is 3-2019.10.
