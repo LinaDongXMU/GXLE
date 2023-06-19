@@ -22,7 +22,7 @@ function pdbsetup()
 #protein
 	if [ -f ${pdbid}_protein.pdb ]&&[ ! -e ${pdbid}_protein.pdb_1 ];then
 		pdb4amber -i ${pdbid}_protein.pdb -s @H*,1H*,2H* -o ${pdbid}_protein-h.pdb > /dev/null
-		sed '/HEADER/d;/COMPND/d;/SEQRES/d;/REMARK/d;/TER/d;/END/d;/H$/d' ${pdbid}_protein-h.pdb > ${pdbid}_protein.pdb_1
+		sed '/HEADER/d;/COMPND/d;/SEQRES/d;/REMARK/d;/TER/d;/END/d;/WAT/d;/H$/d' ${pdbid}_protein-h.pdb > ${pdbid}_protein.pdb_1
 	fi
 #ligand
 	chg=$(awk '/<TRIPOS>ATOM/{f=1;next} /<TRIPOS>BOND/{f=0} f' $1 | awk '{sum += $NF};END {print sum}'); intchg=$(printf "%.0f\n" $chg)
